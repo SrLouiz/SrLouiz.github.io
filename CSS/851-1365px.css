@@ -1,0 +1,47 @@
+/*Para algunas PC's*/
+@media(851px<= width <= 1365px){
+    header .Contenedor{
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+    }
+
+    header nav{
+        margin-top:5px;
+        margin-bottom:5px;
+        display: flex;
+        align-items: center;
+        font-size: 15px;
+    }
+
+    a>#Titulo_Encabezado{
+        font-size: 31px;
+        margin-top: 10px;
+    }
+
+    header {
+        padding: 0px 0;
+        position: static;
+        }
+
+    .imagen-presentacion{height: 36vw;}
+
+    .imagen-presentacion3 {height: 25vw;}
+    
+    #Banner>h1{
+        margin-top: 50px;
+        margin-left: 120px;
+        margin-right: 54vw;
+        font-size: 50px;
+    }
+        
+    #Banner>h1>span{font-size: 2vw;}
+
+    #imgBanner{
+        background-image: none;
+    }
+
+    .Pres-contenedor{height: 370px;}
+
+    .texto-presentacion{margin: 20px;}
+ }

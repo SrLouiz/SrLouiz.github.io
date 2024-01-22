@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prebiotics Fruits / Iniciar sesión</title>
+    <link rel="stylesheet" href="./CSS/NewLogin.css">
+
+    <link rel="icon" href="./img/SinFondo/Granada, sin fondo.png">
+
+</head>
+
+<body>
+    
+    <div id="banner">
+        <h1 id="Texto_Bienvenido">Bienvenid@</h1><br>
+        <p id="parrafo_Bienvenido">Inicie sesión para optimizar su experiencia en nuestra página web</p>
+    </div>
+
+    <section class="bordes">
+        <form action="https://formsubmit.co/louis13ms@gmail.com" method="post" class="form"> 
+            <h1 class="Inicio">Inicio</h1>
+            <div class="inp">
+                <input type="text" name="nombre" id="user" class="input" placeholder="usuario">
+            </div>
+            <div class="inp">
+                <input type="password" name="contraseña" id="password" class="input" placeholder="contraseña">     
+            </div>
+            <button  type="submit" value="Enviar"  class="submit"  onclick="validar()">Iniciar sesión</button>
+
+            <p class="footer">¿No tienes cuenta?<a href="/Register.html" class="link"> Por favor, Regístrate</a></p>  
+
+        </form>
+    </section>
+    <script>
+        function validar(){
+            let user =document.getElementById("user").value;
+            let expreU=/^([A-ZÑÁÉÍÓÚ]{1}[a-zñáéíóú]+[\s]*)+$/;
+
+            
+            let password =document.getElementById("password").value;
+            let expreP=/^([A-ZÑÁÉÍÓÚ]{1}[a-zñáéíóú]+[\s]*)+$/;
+
+            if ((expreg.test(nom)) && (expreg2.test(edad)) && (expreg3.test(correoE)) && FechaN){
+                    alert("Datos Ingresados Correctamente");
+                } else {
+                    alert("Faltan Datos");
+                }
+            if (expreg.test(user)) {
+                    alert("Nombre correcto");
+                } else {
+                    alert("Nombre incorrecto");
+                }
+                    if (expreg2.test(password)) {
+                        alert("Contraseña Correcta");
+                    } else {
+                        alert("Contraseña Incorrecta");
+                  }      
+          }  
+    </script>
+</body>
+</html>

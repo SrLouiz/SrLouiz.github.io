@@ -1,0 +1,58 @@
+    @media(581px<= width <= 850px){
+        header{ position: static; }
+
+        .Contenedor>a>h1{  font-size: 4vw;}    
+
+        header .Contenedor{
+            display: flex;
+            flex-direction: column;
+            padding: 0px 20px;
+        }
+
+        header nav{
+            margin-top: 7px;
+            display: flex;
+            align-items: center;
+            font-size: 15px;
+        }
+
+        #Banner>h1{
+            margin-top: 25px;
+            margin-left: 10vw;
+            font-size: 40px;
+        }
+
+        #Banner>h1>span{  font-size: 30px; }
+
+        #imgBanner{  background-image: none;}
+
+        .ContenedorBloques {
+            display: flex;
+            justify-content: center;
+            margin: 20px 0;
+        }
+
+        #presentacion,   #presentacion3  {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+        }
+
+        .Pres-contenedor {
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .texto-presentacion{ margin: 45px; }
+
+        .imagen-presentacion{ height: 33vw;}
+
+        .imagen-presentacion3 {height: 35vw;}
+
+        .texto-presentacion h2 { font-size: 24px;}
+
+        .texto-presentacion p {   font-size: 14px; }
+
+        .card {width: 29%; }     
+    }    

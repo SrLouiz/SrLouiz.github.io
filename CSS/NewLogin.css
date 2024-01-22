@@ -1,0 +1,145 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: arial;
+    color: #fff;
+}
+
+body{
+    background: #081b29;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+}
+
+.bordes{
+    margin: auto;
+    padding-top: 50px;
+    width: 70vw;
+    height: 69vh;
+    border-radius: 15px;
+    box-shadow: 0 0 50px 0 rgb(31, 255, 87);
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.Inicio{font-size: 35px;}
+
+.inp{
+    padding-bottom: 10px;
+    border-bottom: 2px solid #eee;
+}
+.input{
+    border: none;
+    outline: none;
+    background: none;
+    width: 260px;
+    margin-top: 40px;
+    padding-right: 10px;
+    font-size: 17px;
+    color: rgb(31, 255, 87);
+
+}
+.link{
+    color: palegreen;
+    text-decoration: none;
+}
+
+#Texto_Bienvenido{
+    color: rgb(31, 255, 87);
+}
+
+.submit{
+    border: none;
+    outline: none;
+    width: 288px;
+    margin-top: 25px;
+    padding: 10px 0;
+    font-size: 20px;
+    border-radius: 40px;
+    letter-spacing: 2px;
+
+    cursor: pointer;
+    background: linear-gradient(to right,rgb(39, 238, 89), rgb(2, 243, 62), rgb(56, 209, 95));
+}
+.footer{
+    margin-top: 30px;
+    letter-spacing: 0.5px;
+    font-size: 14px;
+}
+
+#banner{
+    margin: 20px 0px 40px;
+    z-index: -2;
+}
+
+
+    @media (600px<= width <= 1365px) {         
+            .bordes{
+                padding-top: 50px;
+                width: 419px;
+                height: 69vh;
+                border-radius: 15px;
+                box-shadow: 0 0 50px 0 rgb(31, 255, 87);
+            }
+    }
+
+    @media (1366px<= width <= 2000px) {         
+                
+        #banner{
+            position: absolute;
+            margin: 0;
+            top: 0;
+            left: 0;
+            width: 300px;
+            height: 390px;
+            background-image: url(../img/fondo_en_verde_pastel_principal.jpg);
+            border-radius: 100px 100% 250000px 30%;
+            padding-right: 10%;
+            text-align:justify;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-end;
+            background-position: right;
+            background-size: cover;
+        }
+        #Texto_Bienvenido{
+            font-size: 40px;
+            margin-top: -50px;
+            margin-right: 60px;
+            line-height: 50px;
+            color: #081b29;
+        }
+        #parrafo_Bienvenido{
+            margin-right: 76px;
+            margin-top: 10px;
+            font-size: 18px;
+            line-height: 24px;
+            letter-spacing: 3px;
+            width: 70%;
+            color: #081b29;
+            text-align: left;
+        }
+
+            .bordes{
+                margin-top: 13vh;
+                padding-top: 50px;
+                width: 419px;
+                height: 69vh;
+                border-radius: 15px;
+                box-shadow: 0 0 50px 0 rgb(31, 255, 87);
+            }
+
+            .footer{
+                margin-top:60px;
+                letter-spacing: 0.5px;
+                font-size: 14px;
+            }
+        
+    }

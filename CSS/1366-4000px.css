@@ -1,0 +1,52 @@
+@media(1366px<= width <= 4000px){   
+
+    header{z-index: 10; }
+
+    #Banner>h1{
+        margin-top: 20px;
+        margin-left: 120px;
+        margin-right: 54vw;
+        font-size: 4vw;
+    }
+
+    #imgBanner{
+        margin-top: -300px;
+        margin-right: 260px;
+    }
+        
+    .imagen-presentacion{height: 515px;}
+
+    .imagen-presentacion3 {height: 400px;}
+    
+    article{ 
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .card {
+        position: relative;
+        width: 200px;
+        height: 19em;
+      }
+      #Productos{
+        animation: reveal linear both;
+        animation-timeline: view();
+        animation-range:entry 10% cover 25%;
+      }
+
+      @keyframes reveal {
+        0%{
+            opacity: 0;
+            translate: 0 -45px;
+        }
+
+        100%{
+            opacity: 1;
+            translate: 0 0px;
+        }
+        
+      }
+    }

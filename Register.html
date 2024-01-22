@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prebiotics Fruits / Registrarse</title>
+    <link rel="stylesheet" href="/CSS/Register.css">
+
+    <link rel="icon" href="./img/SinFondo/Granada, sin fondo.png">
+
+    <script>
+        function validar(){
+            let nom =document.getElementById("nombre").value;
+            let expreg=/^([A-ZÑÁÉÍÓÚ]{1}[a-zñáéíóú]+[\s]*)+$/;
+
+            let contr =document.getElementById("contr").value;
+            let expreg2=/^[A-ZÑÁÉÍÓÚ][a-zñáéíóú]+$/;
+
+            let edad=document.getElementById("edad").value;
+            let expreg3=/^([0-9]{2})+$/;
+            
+            let correoE =document.getElementById("correo").value;
+            let expreg4=/^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
+
+            let FechaN = document.getElementById("FechaN").value;
+
+            if ((expreg.test(nom)) && (expreg2.test(contr)) && (expreg3.test(edad)) && (expreg4.test(correoE)) && FechaN){
+                    alert("Datos Ingresados Correctamente");
+                } else {
+                    alert("Faltan Datos");
+                }  
+            
+             if (expreg.test(nom)) {
+                    alert("Nombre correcto");
+                } else {
+                    alert("Nombre incorrecto");
+                }
+                    if (expreg2.test(contr)) {
+                        alert("Contraseña Correcta");
+                    } else {
+                        alert("Contraseña Incorrecta");
+                    }
+                        if (expreg3.test(edad)) {
+                            alert("edad Correcta");
+                        } else {
+                            alert("edad Incorrecta");
+                        }
+                            if (expreg4.test(correoE)) {
+                                alert("correo Correcto");
+                            } else {
+                                alert("correo Incorrecto");
+                            }
+                                if (FechaN) {
+                                    alert("Fecha Correcta");
+                                } else {
+                                    alert("Fecha Incorrecta");
+                                }
+                 }      
+</script>
+</head>
+
+<body>
+    <section class="bordes">
+        <form class="form" action="https://formsubmit.co/louis13ms@gmail.com" method="post" >
+            <h1 class="Inicio">Regístrese</h1>
+            <div class="inp">
+                <input type="text" name="nombre" id="" class="input" placeholder="usuario">
+            </div>
+            <div class="inp">
+                <input type="password" name="contraseña" id="" class="input" placeholder="contraseña">     
+            </div>
+            <div class="inp">
+                <input type="password" name="confirm. contraseña" id="" class="input" placeholder="verifique su contraseña">     
+            </div>
+            <div class="inp">
+                <input type="email" name="email" id="" class="input" placeholder="email">
+            </div>
+            <div class="inp">
+                <input type="date" name="edad" id="" class="input" placeholder="edad">     
+            </div>
+            <button type="submit"  value="Enviar"  class="submit"  onclick="validar()">Iniciar sesión</button>
+        
+        </form>
+    </section>
+    
+</body>
+</html>

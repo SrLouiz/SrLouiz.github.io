@@ -1,0 +1,274 @@
+/* Reset de estilos y box-sizing */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: #e0f1ff;
+    font-family: Arial, sans-serif;
+}
+
+/* Estilos de la barra de navegación */
+header {
+    background: linear-gradient(to right, #51d775, #26ca52);
+    font-size: 1vw;
+    padding: 10px 0;
+    
+    position: sticky;
+    width: 100%;
+    top: 0;
+    left: 0;
+ 
+    animation-range: 0px 10px;
+    animation: BarraNav linear both;
+    animation-timeline:scroll(root);
+}
+
+@keyframes BarraNav{
+    to{
+        background: rgba(53, 180, 64, 1);
+        backdrop-filter:blur(5px);
+        font-size: 1vw;
+        color: black;
+        margin-top: -50px;
+    }
+}
+
+header .Contenedor {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.Contenedor>a{
+    text-decoration: none;
+    font-style: normal;
+}
+
+
+h1 { color: white;}
+
+h1>span {color:#017143;}
+
+nav { display: flex;}
+
+nav a {
+    padding: 5px 10px;
+    margin: 0px 10px;
+    color: white;
+    text-decoration: none;
+    border-radius: 50px;
+}
+
+div h3{color: #51d775;}
+
+li{text-decoration-line: none;}
+
+ nav :hover{
+    color:#071e32;
+    border-radius: 30px 10px 50px 10px; 
+    background-image: linear-gradient(to right, #50d676, #faf487);
+    transition: 0.5s ease-in;
+ }
+
+#Banner {
+    background: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.7)),
+     url(../img/SinFondo/fondo_verde.jpg);
+    height: 95vh;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding: 50px 0;
+}
+
+#Banner>h1{
+    color:#071e32;
+    font-family: LouisBold;
+    letter-spacing: 6px;
+    margin-top:12vh;
+    margin-right: 840px;
+    margin-left: 200px;
+    font-size: 3.5vw;
+}
+
+#Banner>h1>span{
+    color:white;
+    font-size: 2vw;
+}
+
+#imgBanner{
+    background-image: url(../img/SinFondo/CocoSinFondo.png);
+    justify-content: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    float: right;
+    margin-top: -300px;
+    margin-right: 300px;
+    width: 300px;
+    height: 250px;
+}
+
+/* Estilos de los bloques de contenido */
+.ContenedorBloques {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+#presentacion, #presentacion3 {
+    background-color:#071e32;
+}
+
+.Pres-contenedor {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.texto-presentacion {   flex: 1;}
+
+.texto-presentacion h2 {color: white;}
+
+.texto-presentacion p {
+    color: white;
+    line-height: 1.6;
+}
+
+.texto-presentacion a {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.imagen-presentacion, .imagen-presentacion3 {
+    background-size: cover;
+    background-position: center;
+    flex: 1;
+    height: 60vh; 
+}
+
+.imagen-presentacion {  background-image: url('../img/SinFondo/Granada\,\ sin\ fondo.png');}
+
+.imagen-presentacion3 { background-image: url('../img/SinFondo/lima_sinfondo.png');}
+
+#sobre-nosotros {
+    background-color: #f9f9f9;
+    padding: 50px 0;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1); 
+}
+
+#sobre-nosotros h2 {
+    text-align: center;
+    color: #333;
+}
+
+.contenido-sobre-nosotros {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.historia, .mision-vision {
+    width: 100%;
+    padding:15px;
+    max-width: 400px;
+    margin-bottom: 20px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+}
+
+#AcercaDe, #Contacto{margin-left: 25px;}
+
+.presentacion {
+    background: linear-gradient(to right, #51d775, #1ea442);
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    color: white;
+    margin: 0 10px;
+    }
+
+ /* Estilos de las secciones */
+ #Inicio,#Productos,#AcercaDe,#Contacto {
+     margin-top: 20px;
+     padding: 50px 0;
+    }
+ 
+ #Inicio h1,#Productos h1,#AcercaDe h2,#Contacto h2 { color: #333;}
+
+/* Estilos del footer */
+footer {
+    background-color:#071e32;
+    padding: 30px 0;
+}
+/* ... (Estilos existentes) */
+
+.ContenedorPie {
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer-section {text-align: center;}
+
+.redes-sociales {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.redes-sociales li {
+    padding: 2px;
+    margin: 5px;
+    display: flex;
+    align-items: center; /* Centra verticalmente */
+    cursor: pointer;
+
+}
+
+.redes-sociales a{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+}
+
+.redes-sociales img {
+    width: 22px;
+    height:22px;
+    margin-right: 10px;
+    filter: invert(); 
+}
+
+/* ... (Otros estilos) */
+
+ul li {
+    margin: 5px 0;
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+}
+
+ul li:hover {
+    text-decoration: underline rgb(20, 219, 87) 2.5px;
+    transition: 0.7s ease-in;
+}
+
+
+

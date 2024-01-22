@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: arial;
+    color: #fff;
+}
+
+body{
+    background-image: url(../img/Arándano.jpg);
+    background-position:center;
+    background-size: cover;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+}
+
+.bordes{
+    margin: 50px auto;
+    padding-top: 50px;
+    width: 70vw;
+    height: 80vh;
+    border-radius: 15px;
+    box-shadow: 0 0 50px 0 rgb(1, 180, 46);
+    background-color: #11243f;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.Inicio{ font-size: 35px;}
+
+.inp{
+    padding-bottom: 10px;
+    border-bottom: 2px solid #eee;
+}
+.input{
+    border: none;
+    outline: none;
+    background: none;
+    width: 260px;
+    margin-top: 40px;
+    padding-right: 10px;
+    font-size: 17px;
+    color: rgb(31, 255, 87);
+
+}
+
+:focus{ outline: #11243f;}
+
+.submit{
+    border: none;
+    outline: none;
+    width: 288px;
+    margin-top: 25px;
+    padding: 10px 0;
+    font-size: 20px;
+    border-radius: 40px;
+    letter-spacing: 2px;
+
+    cursor: pointer;
+    background: linear-gradient(to right,rgb(39, 238, 89), rgb(2, 243, 62), rgb(56, 209, 95));
+}
+.footer{
+    margin-top: 30px;
+    letter-spacing: 0.5px;
+    font-size: 17px;
+}
+
+#banner{
+    margin: 20px 0px 40px;
+}
+
+    @media (600px<= width <= 1365px) {         
+                    
+           .bordes{
+                margin: 50px auto;
+                padding-top: 50px;
+                width: 400px;
+                height: 80vh;
+                border-radius: 15px;
+                border: 100px 0 50px 0 rgb(1, 180, 46);
+            }
+    
+        }
+        
+    @media (1366px<= width <= 2000px) {         
+                
+            .bordes{
+                margin-top: 7vh;
+                padding-top: 50px;
+                width: 419px;
+                height: 83vh;
+                border-radius: 15px;
+                box-shadow: 0 0 50px 0 rgb(31, 255, 87);
+            }
+    }
