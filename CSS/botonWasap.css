@@ -43,3 +43,9 @@
 	}
 	
 }
+
+ @media (0px<= width <= 580px) {    
+	.float{
+	  z-index: -10;
+	}
+}
