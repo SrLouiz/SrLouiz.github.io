@@ -15,10 +15,10 @@ body{
 .bordes{
     margin: auto;
     padding-top: 50px;
-    width: 70vw;
-    height: 69vh;
+    width: 90vw;
+    height: 60vh;
     border-radius: 15px;
-    box-shadow: 0 0 50px 0 rgb(31, 255, 87);
+    box-shadow: 0 0 5px 0 rgb(31, 255, 87);
 }
 
 .form{
@@ -57,7 +57,7 @@ body{
 .submit{
     border: none;
     outline: none;
-    width: 288px;
+    width: 208px;
     margin-top: 25px;
     padding: 10px 0;
     font-size: 20px;
@@ -67,6 +67,7 @@ body{
     cursor: pointer;
     background: linear-gradient(to right,rgb(39, 238, 89), rgb(2, 243, 62), rgb(56, 209, 95));
 }
+
 .footer{
     margin-top: 30px;
     letter-spacing: 0.5px;
@@ -140,6 +141,5 @@ body{
                 margin-top:60px;
                 letter-spacing: 0.5px;
                 font-size: 14px;
-            }
-        
+            }      
     }
