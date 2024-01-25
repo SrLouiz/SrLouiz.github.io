@@ -1,0 +1,112 @@
+/*Nuevas clases :*/
+article {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; 
+    width: 90%;
+    margin-left: 5vw;
+    margin-bottom: 2vh;
+    margin-top: 2vh;
+  }
+  
+  .card {
+    position: relative;
+    width: 12.5em;
+    height: 20.5em;
+    margin: 0.5em; 
+    box-shadow: 0px 1px 13px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+    padding: 0.5em;
+    padding-bottom: 3.4em;
+  }
+  
+  .card .title, .price {
+    font-size: 0.9em;
+    position: absolute;
+    left: 0.625em;
+    font-weight: 400;
+  }
+
+  .card .price {font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;}
+
+  .image {
+    position: absolute;
+    border-radius: 10px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .text { max-width: 55px;}
+  
+  #Aguaymanto{  background-image:url(../img/Aguaymanto.jpg);}
+  #Arandano  {  background-image:url(../img/Arándano.jpg);}
+  #Aguaje    {  background-image:url(../img/Aguaje.jpg);}
+  #Camu-Camu{  background-image:url(../img/Camu-Camu.jpg);}
+ 
+  #Carambola{  background-image:url(../img/Carambola.jpg);}
+  #Chirimoya{  background-image:url(../img/Chirimoya.jpg);}
+  #Coco     {  background-image:url(../img/Coco.jpg);}
+  #Cocona   {  background-image:url(../img/Cocona.jpg);}
+ 
+  #Frambuesa{  background-image:url(../img/Frambuesa.jpg);}
+  #Fresa{  background-image:url(../img/fresas.jpg);}
+  #Granada   {  background-image:url(../img/Granada.jpg);}
+  #Granadilla  {  background-image:url(../img/granadilla.jpg);}
+
+  #Lima   {  background-image:url(../img/Lima.jpg);}
+  #Lucuma   {  background-image:url(../img/Lucuma.jpg);}
+  #Maracuya{  background-image:url(../img/Maracuya.jpg);}
+  #Mamey{  background-image:url(../img/Mamey.jpg);}
+
+  #Noni{  background-image:url(../img/Noni.jpg);}
+  #Plátano   {  background-image:url(../img/Plátano.jpg);}
+  #Pitahaya   {  background-image:url(../img/PitahayaYellow.jpg);}
+  #SachaInchi   {  background-image:url(../img/SachaInchi.jpg);}
+
+  #Sanky   {  background-image:url(../img/Sanky.jpg);}
+  #Tamarindo   {  background-image:url(../img/Tamarindo.jpg);}
+  #Toronja{  background-image:url(../img/Toronja.jpg);}
+  #Tumbo   {  background-image:url(../img/Tumbo.jpg);}
+  
+  #Yacon   {  background-image:url(../img/yacon.jpg);}
+
+  .card:active {transform: scale(0.98);}
+  
+  .card:hover .flip-card {transform: rotateY(180deg);}
+
+  .flip-card {
+    margin-bottom: 10px;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: transform 1s;
+  }
+  
+  .card-front, .card-back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden; 
+  }
+
+  .card-back {
+    backdrop-filter: brightness(0.5);
+    border-radius: 10px;
+    color: white;
+    box-sizing: border-box;
+    padding: 0 12px;
+    transform: rotateY(180deg);
+}
+
+.card-back > h2{
+  padding:2.5px 0;
+  text-shadow: 2px 2px 1px black;
+  font-family: TommySemiBold;
+}
